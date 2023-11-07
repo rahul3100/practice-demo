@@ -10,7 +10,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.parent()
     console.log(this.parent());
-
   }
   title = 'practice';
 
@@ -22,6 +21,4 @@ export class AppComponent implements OnInit {
   myfun() {
     return "hello world"
   }
-
-  
 }

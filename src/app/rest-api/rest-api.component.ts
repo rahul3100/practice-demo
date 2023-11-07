@@ -17,7 +17,7 @@ export class RestApiComponent {
 
   getdataForm(formdata: any) {
     console.log(formdata);
-    this.restdata.savedata(formdata).subscribe((item)=>{
+    this.restdata.savedata(formdata).subscribe((item) => {
       console.log(item);
     })
 
