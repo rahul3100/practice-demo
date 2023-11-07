@@ -1,0 +1,10 @@
+<p>form works!</p>
+
+<form  #basicform="ngForm" (ngSubmit)="getdata(basicform.value)">
+    <input ngModel type="text" name="username" placeholder="username">
+    <input ngModel type="text" name="password" placeholder="password">
+    <button>submit</button>
+</form>
+
+<li>{{user.username}}</li>
+<li>{{user.password}}</li>

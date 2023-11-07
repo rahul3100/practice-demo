@@ -1,0 +1,13 @@
+<p>rest-api works!</p>
+
+
+<form #formdata="ngForm" (ngSubmit)="getdataForm(formdata.value)">
+    <input ngModel type="text" name="name" placeholder="enter name"><br><br>
+    <input ngModel type="text" name="pc" placeholder="enter pc name"><br><br>
+    <input ngModel type="text" name="mouse" placeholder="enter mouse name"><br><br>
+    <button>submit</button>
+</form>
+<ul *ngFor="let item of data">
+    <li>{{item.name}}</li>
+    <li>{{item.id}}</li>
+</ul>
